@@ -9,7 +9,7 @@ api_key = os.getenv("OPENAI_API_KEY")
 if api_key is not None:
     print("API key loaded successfully!")
 else:
-    print("API key not found")
+    print("API key not found...")
 
 llm = ChatOpenAI(temperature=25, model="gpt-5.2", max_tokens=1000,api_key=api_key)
 
